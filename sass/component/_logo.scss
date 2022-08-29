@@ -1,0 +1,62 @@
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+
+  color: #000000;
+
+  transition: color 250ms var(--cubic-bezier);
+
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+.logo-secondary {
+  display: block;
+  margin-bottom: 20px;
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+
+  color: var(--primary-white-color);
+
+  transition: color 250ms var(--cubic-bezier);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.logo-accent {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+
+  color: var(--accent-color);
+
+  transition: color 250ms var(--cubic-bezier);
+
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.logo-blue {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+
+  color: var(--accent-color);
+}

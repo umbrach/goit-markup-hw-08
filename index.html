@@ -50,7 +50,80 @@
             >
           </li>
         </ul>
-        <button class="burger" type="button">X</button>
+        <button
+          class="burger-button is-open"
+          type="button"
+          data-menu-button
+          aria-expanded="false"
+          aria-controls="menu-container"
+        >
+          <svg width="40px" height="40px" aria-label="Mobile menu button">
+            <use class="icon-menu-close" href="./images/icons.svg#burger"></use>
+            <use class="icon-menu" href="./images/icons.svg#burger_close"></use>
+          </svg>
+        </button>
+
+        <div class="menu-container" id="menu-container" data-menu>
+          <div class="burger-nav">
+            <li class="burger-nav__item">
+              <a href="./index.html" class="burger-nav__link current">Студія</a>
+            </li>
+            <li class="burger-nav__item">
+              <a href="./portfolio.html" class="burger-nav__link">Портфоліо</a>
+            </li>
+            <li class="burger-nav__item">
+              <a href="#contacts" class="burger-nav__link">Контакти</a>
+            </li>
+          </div>
+          <div class="burger-contacts">
+            <li class="burger-contacts__item">
+              <a href="tel:+380961111111" class="burger-contacts__link">+38 096 111 11 11</a>
+            </li>
+            <li class="burger-contacts__item">
+              <a href="maito:info@devstudio.com" class="burger-contacts__link-mail"
+                >info@devstudio.com</a
+              >
+            </li>
+          </div>
+          <div class="burger-network">
+            <li class="burger-social">
+              <a
+                href="https://www.instagram.com/"
+                class="burger-social__link"
+                target="_blank"
+                rel="noopener noreferer nofollow"
+                >Instagram</a
+              ><span class="line"></span>
+            </li>
+            <li class="burger-social">
+              <a
+                href="https://twitter.com/"
+                class="burger-social__link"
+                target="_blank"
+                rel="noopener noreferer nofollow"
+                >Twitter</a
+              ><span class="line"></span>
+            </li>
+            <li class="burger-social">
+              <a
+                href="https://www.facebook.com/"
+                class="burger-social__link"
+                target="_blank"
+                rel="noopener noreferer nofollow"
+                >Facebook</a
+              ><span class="line"></span>
+            </li>
+            <li class="burger-social">
+              <a
+                href="https://www.linkedin.com/"
+                class="burger-social__link"
+                target="_blank"
+                rel="noopener noreferer nofollow"
+                >Linkedin</a
+              >
+            </li>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -131,6 +204,15 @@
           <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="work-list">
             <li class="work-list__item">
+              <picture>
+                <source
+                  srcset="
+                    /images\images1\images\desktop\studio\img1-desktop.jpg    1x,
+                    /images\images1\images\desktop\studio\img1-desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+              </picture>
               <img
                 src="./images/img1.jpg"
                 alt="Людина набирає текст на компьютері"
@@ -140,6 +222,15 @@
               <p class="work-list__text">Десктопні додатки</p>
             </li>
             <li class="work-list__item">
+              <picture>
+                <source
+                  srcset="
+                    /images\images1\images\desktop\studio\img2-desktop.jpg    1x,
+                    /images\images1\images\desktop\studio\img2-desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+              </picture>
               <img
                 src="./images/img2.jpg"
                 alt="Людина переглядає макети мобільного додатка на компьютері"
@@ -149,6 +240,15 @@
               <p class="work-list__text">Мобільні додатки</p>
             </li>
             <li class="work-list__item">
+              <picture>
+                <source
+                  srcset="
+                    /images\images1\images\desktop\studio\img3-desktop.jpg    1x,
+                    /images\images1\images\desktop\studio\img3-desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+              </picture>
               <img
                 src="./images/img3.jpg"
                 alt="Людина переглядає палітри кольорів на планшеті"
@@ -168,6 +268,29 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list__item">
+              <picture>
+                <source
+                  srcset="
+                    /images/images1/images/desktop/studio/ihordemianenko-desktop.jpg    1x,
+                    /images/images1/images/desktop/studio/ihordemianenko-desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    /images/images1/images/tablet/studio/ihordemianenko-tablet.jpg    1x,
+                    /images/images1/images/tablet/studio/ihordemianenko-tablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    /images/images1/images/mob/studio/ihordemianenko-mob.jpg    1x,
+                    /images/images1/images/mob/studio/ihordemianenko-mob@2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+              </picture>
               <img src="./images/img4.jpg" alt="Фото Ігор Дем'яненко" width="270" height="260" />
               <div class="team-list__name">
                 <h3 class="team-list__title">Ігор Дем'яненко</h3>
@@ -235,6 +358,29 @@
             </li>
 
             <li class="team-list__item">
+              <picture>
+                <source
+                  srcset="
+                    /images\images1\images\desktop\studio\olhariepina-desktop.jpg    1x,
+                    /images\images1\images\desktop\studio\olhariepina-desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    /images/images1/images/tablet/studio/olhariepina-tablet.jpg    1x,
+                    /images/images1/images/tablet/studio/olhariepina-tablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    /images/images1/images/mob/studio/olhariepina-mob.jpg    1x,
+                    /images/images1/images/mob/studio/olhariepina-mob@2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+              </picture>
               <img src="./images/img5.jpg" alt="Фото Ольга Рєпіна" width="270" height="260" />
               <div class="team-list__name">
                 <h3 class="team-list__title">Ольга Рєпіна</h3>
@@ -301,6 +447,29 @@
             </li>
 
             <li class="team-list__item">
+              <picture>
+                <source
+                  srcset="
+                    /images\images1\images\desktop\studio\mykolatarasov-desktop.jpg    1x,
+                    /images\images1\images\desktop\studio\mykolatarasov-desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    /images\images1\images\tablet\studio\mykolatarasov-tablet.jpg    1x,
+                    /images\images1\images\tablet\studio\mykolatarasov-tablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    /images\images1\images\mob\studio\mykolatarasov-mob.jpg    1x,
+                    /images\images1\images\mob\studio\mykolatarasov-mob@2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+              </picture>
               <img src="./images/img6.jpg" alt="Фото Микола Тарасов" width="270" height="260" />
               <div class="team-list__name">
                 <h3 class="team-list__title">Микола Тарасов</h3>
@@ -367,6 +536,29 @@
             </li>
 
             <li class="team-list__item">
+              <picture>
+                <source
+                  srcset="
+                    /images\images1\images\desktop\studio\mykhailoyermakov-desktop.jpg    1x,
+                    /images\images1\images\desktop\studio\mykhailoyermakov-desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    /images\images1\images\tablet\studio\mykhailoyermakov-tablet.jpg    1x,
+                    /images\images1\images\tablet\studio\mykhailoyermakov-tablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    /images\images1\images\mob\studio\mykhailoyermakov-mob.jpg    1x,
+                    /images\images1\images\mob\studio\mykhailoyermakov-mob@2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+              </picture>
               <img src="./images/img7.jpg" alt="Фото Михайло Єрмаков" width="270" height="260" />
               <div class="team-list__name">
                 <h3 class="team-list__title">Михайло Єрмаков</h3>
@@ -603,7 +795,7 @@
     </footer>
 
     <!--Модальне вікно-->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <div class="modal__form">
           <button type="button" class="modal__close-button" data-modal-close>
@@ -656,8 +848,9 @@
           </form>
         </div>
       </div>
-    </div> -->
+    </div>
     <!--Скрипт JS-->
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

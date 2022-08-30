@@ -12,20 +12,53 @@
     url('../images/bg_img.jpg');
   background-repeat: no-repeat;
   background-position: center;
+
+  @include desktop {
+    max-width: 1600px;
+    height: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/bg_img.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .container.hero__container {
-  padding: 200px 237px;
+  padding: 118px 60px;
+
+  @include tablet {
+    padding: 118px 204px;
+  }
+
+  @include desktop {
+    padding: 200px;
+  }
 }
 
 .hero__title {
   margin-top: 0;
   margin-bottom: 30px;
 
-  color: var(--primary-white-color);
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  color: #ffffff;
+
+  @include desktop {
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: var(--primary-white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+  }
 }

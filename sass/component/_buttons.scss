@@ -1,16 +1,3 @@
-.filter__button {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.filter__button button:hover,
-.filter__button button:focus {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
 .button {
   color: var(--primary-text-color);
   background-color: #f5f4fa;
@@ -37,15 +24,16 @@
 
 .button.filter__button-secondary-filter {
   margin-left: 8px;
-  padding: 6px 25px 6px 25px;
+  margin-bottom: 15px;
+  padding: 6px 22px 6px 22px;
   border: 0px;
   border-radius: 4px;
-
-  color: var(--primary-text-color);
-  background-color: #f5f4fa;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+
+  color: var(--primary-text-color);
+  background-color: #f5f4fa;
 }
 
 .button:hover,

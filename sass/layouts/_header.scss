@@ -5,16 +5,47 @@
 .main-nav {
   display: flex;
   align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 768px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  @include desktop {
+    max-width: 1200px;
+    justify-content: space-between;
+  }
 }
 
 .site-nav.list {
+  display: none;
   padding-top: 32px;
   padding-bottom: 32px;
+
+  @include tablet {
+    max-width: 768px;
+    display: flex;
+  }
+
+  @include desktop {
+    max-width: 1200px;
+    margin-right: 92px;
+  }
 }
 
 .site-nav {
   display: flex;
-  margin-left: 93px;
+  // margin-left: 93px;
+
+  @include desktop {
+    margin-left: 92px;
+  }
 }
 
 .site-nav__item:not(:last-child) {
@@ -63,8 +94,21 @@
 }
 
 .auth-nav {
-  display: flex;
-  margin-left: auto;
+  display: none;
+
+  @include tablet {
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  @include desktop {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+  }
 }
 
 .auth-nav .link {
@@ -89,10 +133,22 @@
 }
 
 .auth-nav__item:not(:last-child) {
-  margin-right: 50px;
+  @include desktop {
+    margin-right: 50px;
+  }
 }
 
 .auth-nav__link-svg {
   margin-right: 10px;
   fill: currentColor;
+}
+
+// burger menu
+
+.burger {
+  margin-left: auto;
+
+  @include tablet {
+    display: none;
+  }
 }

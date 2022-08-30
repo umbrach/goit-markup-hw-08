@@ -1,17 +1,31 @@
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  @include tablet {
+    justify-content: space-around;
+  }
+
+  @include desktop {
+    flex-wrap: nowrap;
+    .clients-list li + li {
+      margin-left: 30px;
+    }
+  }
 }
-.clients-list li + li {
-  margin-left: 30px;
-}
+
+// .clients-list li + li {
+//   margin-left: 30px;
+// }
 
 .clients-list__button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
-  height: 92px;
-  padding: 16px 32px;
+  max-width: 210px;
+  max-height: 92px;
+  padding: 16px 52px;
   border: 1px solid currentColor;
   border-radius: 4px;
 
@@ -23,6 +37,14 @@
   &:focus {
     color: var(--accent-color);
     outline-color: var(--accent-color);
+  }
+
+  @include tablet {
+    max-width: 226px;
+  }
+
+  @include desktop {
+    max-width: 170px;
   }
 }
 

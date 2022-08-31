@@ -1318,13 +1318,11 @@ label {
 @media screen and (min-width: 768px) {
   .work-examples__card {
     max-width: 354px;
-    height: 440px;
   }
 }
 @media screen and (min-width: 1200px) {
   .work-examples__card {
     max-width: 370px;
-    height: 404px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1343,7 +1341,6 @@ label {
   position: relative;
   overflow: hidden;
   max-width: 450px;
-  height: 294px;
 }
 @media screen and (min-width: 768px) {
   .work-examples__card-image {

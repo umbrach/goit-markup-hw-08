@@ -725,7 +725,7 @@ label {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 34px;
+  font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -733,6 +733,11 @@ label {
 }
 .burger-contacts__item:first-child {
   margin-bottom: 32px;
+}
+@media screen and (min-width: 480px) {
+  .burger-contacts__item {
+    font-size: 34px;
+  }
 }
 
 .burger-contacts__link {

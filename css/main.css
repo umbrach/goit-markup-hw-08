@@ -716,7 +716,9 @@ label {
 }
 
 .burger-contacts {
-  text-align: start;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .burger-contacts__item {
@@ -752,6 +754,8 @@ label {
 
 .burger-network {
   display: flex;
+  flex-wrap: wrap;
+  margin-top: 64px;
 }
 
 .burger-social {
@@ -1359,13 +1363,19 @@ label {
 }
 
 .work-examples__text-overlay {
+  display: flex;
+  align-items: center;
   position: absolute;
   top: 0;
   left: 0;
-  padding: 63px 24px;
+  padding: 24px;
   height: 100%;
-  font-size: 18px;
-  line-height: 1.55;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
   color: var(--primary-white-color);
   background: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
@@ -1376,6 +1386,11 @@ label {
 }
 .work-examples__card .link:focus .work-examples__text-overlay {
   transform: translateY(0);
+}
+@media screen and (min-width: 480px) {
+  .work-examples__text-overlay {
+    font-size: 18px;
+  }
 }
 
 .work-examples__text {

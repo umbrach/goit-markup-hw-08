@@ -240,7 +240,10 @@
 }
 
 .burger-contacts {
-  text-align: start;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  // text-align: start;
 }
 
 .burger-contacts__item {
@@ -283,7 +286,8 @@
 
 .burger-network {
   display: flex;
-  // margin-top: 64px;
+  flex-wrap: wrap;
+  margin-top: 64px;
 }
 
 .burger-social {
@@ -310,11 +314,3 @@
 
   color: #2196f3;
 }
-
-// .line {
-//   width: 22px;
-//   height: 0px;
-//   margin-left: 10px;
-
-//   border: 1px solid rgba(33, 33, 33, 0.2);
-// }

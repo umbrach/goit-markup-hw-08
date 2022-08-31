@@ -1,13 +1,14 @@
 .modal {
   position: absolute;
-  max-width: 450px;
-  max-height: 609px;
+  max-width: 100%;
+  width: 450px;
+  height: 609px;
   top: 50%;
   left: 50%;
   z-index: 3;
   opacity: 1;
-  width: 528px;
-  min-height: 581px;
+  // width: 528px;
+  // min-height: 581px;
   border-radius: 4px;
 
   background-color: var(--primary-white-color);
@@ -47,6 +48,7 @@
 .modal__form {
   display: block;
   padding: 40px;
+  width: 100%;
 }
 
 .modal__title {

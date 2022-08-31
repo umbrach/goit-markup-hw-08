@@ -4,13 +4,12 @@
 }
 
 .hero__bg {
-  max-width: 1600px;
-  // height: 600px;
+  max-width: 100vw;
   margin-right: auto;
   margin-left: auto;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/mob/studio/header-mob.jpg');

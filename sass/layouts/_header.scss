@@ -1,6 +1,14 @@
 .page-header {
+  background-color: white;
   border-bottom: 1px solid #ececec;
   position: relative;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 .main-nav {
@@ -14,8 +22,8 @@
     justify-content: space-between;
     align-items: center;
     max-width: 768px;
-    padding-top: 0;
-    padding-bottom: 0;
+    // padding-top: 10;
+    // padding-bottom: 10;
   }
 
   @include desktop {
@@ -26,8 +34,8 @@
 
 .site-nav.list {
   display: none;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   @include tablet {
     max-width: 768px;
@@ -49,10 +57,18 @@
 }
 
 .site-nav__item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 20px;
+
+  @include desktop {
+    margin-right: 50px;
+  }
 }
 
 .site-nav .link {
+  padding: 15px 5px;
+
+  border-radius: 2px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
@@ -66,31 +82,9 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+    background: #f7f7f7;
   }
-
-  &.current {
-    color: var(--accent-color);
-  }
-}
-
-.site-nav__item .link.current {
-  position: relative;
-  padding-bottom: 32px;
-  padding-top: 32px;
-}
-
-.link.current::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: -10%;
-  width: 120%;
-  height: 4px;
-  border-radius: 2px;
-
-  background-color: var(--accent-color);
-
-  transform: translateY(1px);
 }
 
 .auth-nav {
@@ -204,22 +198,17 @@
 
 .burger-nav {
   text-align: start;
-  // margin-bottom: 302px;
 }
 
 .burger-nav__item {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 20px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
   list-style: none;
 
   color: #212121;
-
-  transition: color 250ms var(--cubic-bezier);
 
   &:not(:last-child) {
     margin-bottom: 32px;
@@ -228,11 +217,14 @@
 
 .burger-nav__link {
   text-decoration: none;
-  color: #212121;
-}
+  transition: color 250ms var(--cubic-bezier);
 
-.burger-nav__link.current {
-  color: var(--accent-color);
+  color: #212121;
+
+  &:hover,
+  :focus {
+    color: var(--accent-color);
+  }
 }
 
 .burger-contacts {
@@ -242,8 +234,6 @@
 }
 
 .burger-contacts__item {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
@@ -255,28 +245,33 @@
   &:first-child {
     margin-bottom: 32px;
   }
-
-  @include mobile {
-    font-size: 34px;
-  }
 }
 
 .burger-contacts__link {
   text-decoration: none;
-  color: var(--accent-color);
+  color: #757575;
+
+  &:hover,
+  :focus {
+    color: var(--accent-color);
+  }
 }
 
 .burger-contacts__link-mail {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.02em;
 
   color: #757575;
+
   text-decoration: none;
   list-style: none;
+
+  &:hover,
+  :focus {
+    color: var(--accent-color);
+  }
 }
 
 // .burger-contacts__item:hover .burger-contacts__link {
@@ -291,7 +286,7 @@
 
 .burger-social {
   align-items: center;
-  font-family: 'Roboto';
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -300,7 +295,7 @@
   list-style: none;
   padding-right: 10px;
 
-  color: #2196f3;
+  color: var(--accent-color);
 
   &:not(:last-child) {
     margin-right: 10px;
@@ -311,5 +306,5 @@
 .burger-social__link {
   text-decoration: none;
 
-  color: #2196f3;
+  color: var(--accent-color);
 }

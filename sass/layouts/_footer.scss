@@ -2,7 +2,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  background-color: var(--bg-color);
+  background-color: rgb(255, 255, 255);
 
   &__contacts {
     text-align: center;
@@ -16,6 +16,7 @@
 .page-footer .container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   @include tablet {
     flex-direction: row;
@@ -45,10 +46,14 @@
   }
 }
 
-.page-footer__link .link {
-  margin-top: 9px;
+// .link:hover, .link:focus {
+//   border-bottom: 2px solid var(--accent-color);
+// }
 
-  color: rgba(255, 255, 255, 0.6);
+.page-footer__link .link {
+  margin-top: 10px;
+
+  color: rgb(49, 49, 49);
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
@@ -63,34 +68,27 @@
 }
 
 .page-footer__network {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   @include tablet {
-    // margin-left: 165px;
     margin-top: 0px;
     margin-bottom: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
-  }
-
-  @include desktop {
-    margin-left: 70px;
   }
 }
 
 .page-footer__title {
   margin-bottom: 20px;
 
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 12px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
 
-  color: var(--primary-white-color);
+  color: var(--primary-text-color);
 
   @include desktop {
     text-align: start;
@@ -137,7 +135,7 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
 
-  font-family: 'Roboto';
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -168,7 +166,7 @@
   border-radius: 4px;
   cursor: pointer;
 
-  font-family: 'Roboto';
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -192,4 +190,40 @@
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.page-footer__nav {
+  & .site-nav.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include desktop {
+      flex-direction: row;
+    }
+  }
+
+  .site-nav__item:not(:last-child) {
+    margin-right: 0px;
+    padding-bottom: 20px;
+
+    @include desktop {
+      margin-right: 20px;
+      padding-bottom: 0px;
+    }
+  }
+}
+
+
+.footer-bottom{
+  margin-top: 40px;
+  width: 100%;
+
+  &__text {
+
+    font-size: 12px;
+    text-align: center;
+    
+  }
 }

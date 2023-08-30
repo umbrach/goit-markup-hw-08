@@ -1,18 +1,8 @@
 .logo {
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
-
-  color: #000000;
-
-  transition: color 250ms var(--cubic-bezier);
-
-  &:focus,
-  &:hover {
-    color: var(--accent-color);
-  }
+  display: block;
+  width: 200px;
+  max-width: 100%;
+  height: auto;
 }
 
 .logo-secondary {
@@ -59,4 +49,8 @@
   text-decoration: none;
 
   color: var(--accent-color);
+}
+
+.page-footer__contacts .logo {
+  margin: 0 auto;
 }

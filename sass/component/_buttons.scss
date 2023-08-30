@@ -10,16 +10,48 @@
 }
 
 .button.primary-hero {
-  padding: 10px 32px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 10px 20px;
   border: 0px;
   border-radius: 4px;
 
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+
+  &:hover {
+    color: var(--accent-color);
+    background-color: var(--primary-white-color);
+  }
+
+  @include tablet {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 10px 32px;
+    border: 0px;
+    border-radius: 4px;
+
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+  }
+
+  @include desktop {
+    top: 60%;
+  }
 }
 
 .button.filter__button-secondary-filter {
@@ -34,6 +66,9 @@
 
   color: var(--primary-text-color);
   background-color: #f5f4fa;
+
+  // box-shadow: -6px 8px 11px -2px var(--accent-color);
+
 }
 
 .button:hover,

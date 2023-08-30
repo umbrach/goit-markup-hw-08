@@ -6,7 +6,7 @@
 .section__title {
   margin-top: 0;
   margin-bottom: 30px;
-  font-family: 'Roboto';
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -15,11 +15,10 @@
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #212121;
+  color: #4b4b4b;
 
   @include desktop {
-    margin-bottom: 50px;
-    font-family: 'Roboto';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 36px;

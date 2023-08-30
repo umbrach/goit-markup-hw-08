@@ -59,7 +59,11 @@
   margin-top: auto;
   margin-bottom: auto;
 
-  fill: var(--primary-white-color);
+  fill: white;
+
+  &:hover {
+    fill: var(--accent-color)
+  }
 }
 
 .network-list.network--dark li + li {
@@ -74,16 +78,16 @@
   height: 44px;
   border-radius: 50%;
 
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--accent-color);
   color: var(--primary-white-color);
 
   transition: background-color 250ms var(--cubic-bezier);
 
   &:hover {
-    background-color: var(--accent-color);
+    background-color: white;
   }
 
   .network__link.network--dark:focus & {
-    background-color: var(--accent-color);
+    background-color: white;
   }
 }

@@ -4,49 +4,56 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>TSS Travelsoft</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/tsstravelsoft_favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;900&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Header -->
-    <header class="page-header">
+    <header class="page-header" id="myHeader">
       <div class="container main-nav">
-        <a href="./index.html" class="logo"><span class="logo-blue">Web</span>Studio</a>
+        <a href="./index.html">
+          <img src="./images/tsstravelsoft.png" class="logo" alt="logo" />
+        </a>
 
         <nav>
           <ul class="site-nav list">
-            <li class="site-nav__item"><a href="./index.html" class="link current">Студія</a></li>
-            <li class="site-nav__item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
-            <li class="site-nav__item"><a href="#contacts" class="link">Контакти</a></li>
+            <li class="site-nav__item"><a href="#service" class="link">Service</a></li>
+            <li class="site-nav__item"><a href="#product" class="link">Product</a></li>
+            <li class="site-nav__item"><a href="#contact" class="link">Contact</a></li>
+            <li class="site-nav__item"><a href="#about" class="link">About Us</a></li>
           </ul>
         </nav>
 
         <ul class="auth-nav">
           <li class="auth-nav__item">
-            <a href="maito:info@devstudio.com" class="link">
+            <a href="maito:info@tsstravelsoft.eu" class="link">
               <svg class="auth-nav__link-svg" width="16px" height="12px">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
-              info@devstudio.com</a
+              info@tsstravelsoft.eu</a
             >
           </li>
           <li class="auth-nav__item">
-            <a href="tel:+380961111111" class="link">
+            <a href="tel:+12 891111111" class="link">
               <svg class="auth-nav__link-svg" width="10px" height="16px">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
-              +38 096 111 11 11</a
+              +128 33 111111</a
             >
           </li>
         </ul>
@@ -67,30 +74,33 @@
           <div class="burger-container">
             <div class="burger-nav">
               <li class="burger-nav__item">
-                <a href="./index.html" class="burger-nav__link current">Студія</a>
+                <a href="./index.html" class="burger-nav__link" id="service">Service</a>
               </li>
               <li class="burger-nav__item">
-                <a href="./portfolio.html" class="burger-nav__link">Портфоліо</a>
+                <a href="#product" class="burger-nav__link">Product</a>
               </li>
               <li class="burger-nav__item">
-                <a href="#contacts" class="burger-nav__link">Контакти</a>
+                <a href="#contact" class="burger-nav__link">Contact</a>
+              </li>
+              <li class="burger-nav__item">
+                <a href="#about" class="burger-nav__link">About Us</a>
               </li>
             </div>
             <div class="burger-connect">
               <div class="burger-contacts">
                 <li class="burger-contacts__item">
-                  <a href="tel:+380961111111" class="burger-contacts__link">+38 096 111 11 11</a>
+                  <a href="tel:+1 280 111111" class="burger-contacts__link">+1 280 111111</a>
                 </li>
                 <li class="burger-contacts__item">
                   <a href="maito:info@devstudio.com" class="burger-contacts__link-mail"
-                    >info@devstudio.com</a
+                    >info@tsstravelsoft.eu</a
                   >
                 </li>
               </div>
               <div class="burger-network">
                 <li class="burger-social">
                   <a
-                    href="https://www.instagram.com/"
+                    href="#"
                     class="burger-social__link"
                     target="_blank"
                     rel="noopener noreferer nofollow"
@@ -99,7 +109,7 @@
                 </li>
                 <li class="burger-social">
                   <a
-                    href="https://twitter.com/"
+                    href="#"
                     class="burger-social__link"
                     target="_blank"
                     rel="noopener noreferer nofollow"
@@ -108,7 +118,7 @@
                 </li>
                 <li class="burger-social">
                   <a
-                    href="https://www.facebook.com/"
+                    href="#"
                     class="burger-social__link"
                     target="_blank"
                     rel="noopener noreferer nofollow"
@@ -117,7 +127,7 @@
                 </li>
                 <li class="burger-social">
                   <a
-                    href="https://www.linkedin.com/"
+                    href="#"
                     class="burger-social__link"
                     target="_blank"
                     rel="noopener noreferer nofollow"
@@ -131,538 +141,401 @@
       </div>
     </header>
 
-    <!-- Головна секція -->
+    <!-- Main section -->
     <main>
-      <!-- Герой -->
+      <!-- Hero -->
       <section class="hero">
-        <div class="hero__bg">
-          <div class="container hero__container">
-            <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-            <button type="button" class="button primary-hero" data-modal-open>
-              Замовити послугу
-            </button>
+        <div class="container hero__container">
+          <div class="hero__bg">
+            <video autoplay loop muted>
+              <source src="./images/hero_bg_video.mp4" type="video/mp4" />
+            </video>
+            <div class="overlay"></div>
+            <h1 class="hero__title">TSS Travelsoft & Service AB</h1>
+            <h2 class="hero__title secondary">Your one stop solution</h2>
+            <a href="#product"
+              ><button type="button" class="button primary-hero">Learn more</button></a
+            >
           </div>
         </div>
       </section>
 
-      <!--Особливості-->
-      <section class="section feature">
+      <!--Service-->
+      <section class="section feature" id="service">
         <div class="container">
-          <h2 class="section__title feature-title">Переваги</h2>
-
+          <h2 class="section__title feature-title" style="display: block">
+            Crafted For The Travel Trade
+          </h2>
+          <p class="feature-subtitle">
+            With over two decades of experience in the industry, TSS Travelsoft & Services
+            established itself as a highly reputable provider of travel technology solutions. Our
+            primary objective is to support travel companies in their journey towards successful
+            digital transformation.
+          </p>
           <ul class="feature-list">
             <li class="feature-list__item">
-              <div class="feature-list__item-svg">
-                <svg class="item-antenna" width="70px" height="70px">
-                  <use href="./images/icons.svg#antenna"></use>
-                </svg>
-              </div>
-              <h3 class="feature-list__title">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="feature-list__text">
-                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+              <input type="checkbox" id="check" />
+              <div class="item-img1"></div>
+              <h3 class="feature-list__title" style="font-weight: 700">TRAVEL ADVISOR SOLUTION</h3>
+              <h3 class="feature-list__title" style="color: #2196f3">ALL FREE NO FEES</h3>
+              <p
+                class="feature-list__text"
+                style="font-weight: 600; color: black; margin-bottom: 15px"
+              >
+                B2B Booking engine;<br />
+                Flight, hotel, car, land;<br />
+                No markup - net;<br />
+                Card or wallet payment
               </p>
+              <p class="feature-list__text">
+                Welcome to our B2B booking engine, an exceptional self-service tool tailored
+                specifically for travel professionals like you. With this B2B one-stop shopping
+                portal, you can book all flights, hotels, car rentals, and other travel-related
+                services directly and at the best possible price.
+              </p>
+              <div class="read-more">
+                <p class="feature-list__text">
+                  All rates are net, and you are free to set your own markup. This grants you
+                  unparalleled control, empowering you to deliver the best travel solutions to your
+                  clients. We don't force you into anything, and there are no long-term contracts
+                  either you may cancel your subscription anytime. All you need to do is provide us
+                  with at least three bookings within a three month time period to maintain the
+                  services free of charge, ensuring you stay ahead in the dynamic travel industry.
+                  Get ready to embark on a seamless and profitable journey with our advanced booking
+                  service.
+                </p>
+              </div>
+              <label class="read-more-btn" for="check">Read More</label>
             </li>
-
             <li class="feature-list__item">
-              <div class="feature-list__item-svg">
-                <svg class="item-antenna" width="70px" height="70px">
-                  <use href="./images/icons.svg#clock"></use>
-                </svg>
-              </div>
-              <h3 class="feature-list__title">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="feature-list__text">
-                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+              <input type="checkbox" id="checkOne" />
+              <div class="item-img2"></div>
+              <h3 class="feature-list__title" style="font-weight: 700">OTA WEBSITE B2C</h3>
+              <h3 class="feature-list__title" style="color: #2196f3">ONLY € 149 A MONTH</h3>
+              <p
+                class="feature-list__text"
+                style="font-weight: 600; color: black; margin-bottom: 15px"
+              >
+                B2C Booking engine;<br />
+                Flight, hotel, car, land;<br />
+                No markup - net;<br />
+                We deliver, you charge the customer
               </p>
+              <p class="feature-list__text">
+                With a monthly booking volume of over 500, your company has reached the size where
+                you desire to take charge of your clients' payments and become more involved in the
+                day-to-day operations.
+              </p>
+              <div class="read-more">
+                <p class="feature-list__text">
+                  We offer our IT technology, which provides both flexibility and the ability to
+                  utilize our existing content or incorporate your own customized products. While we
+                  continue to handle the entire reservation process, including ticketing and
+                  delivery of travel documents, this solution grants you complete control over your
+                  cash flow .You will be the Merchant of Record towards your clients. We, upon
+                  fulfillment charge your card or prepaid wallet for the net transactions associated
+                  with each successful booking. This solution puts you in the driver's seat of your
+                  business.
+                </p>
+              </div>
+              <label class="read-more-btn" for="checkOne">Read More</label>
             </li>
-
             <li class="feature-list__item">
-              <div class="feature-list__item-svg">
-                <svg class="item-antenna" width="70px" height="70px">
-                  <use href="./images/icons.svg#diagram"></use>
-                </svg>
-              </div>
-              <h3 class="feature-list__title">ПЛАНУВАННЯ</h3>
-              <p class="feature-list__text">
-                Так само консультація з широким активом значною мірою зумовлює.
+              <input type="checkbox" id="checkTwo" />
+              <div class="item-img3"></div>
+              <h3 class="feature-list__title" style="font-weight: 700">WEBSITE B2B & B2C</h3>
+              <h3 class="feature-list__title" style="color: #2196f3">ONLY € 149 A MONTH</h3>
+              <p
+                class="feature-list__text"
+                style="font-weight: 600; color: black; margin-bottom: 15px"
+              >
+                B2C Booking engine;<br />
+                Flight, hotel, car, land;<br />
+                No markup - net;<br />
+                We issue and charge the customer
               </p>
-            </li>
-
-            <li class="feature-list__item">
-              <div class="feature-list__item-svg">
-                <svg class="item-antenna" width="70px" height="70px">
-                  <use href="./images/icons.svg#astronaut"></use>
-                </svg>
-              </div>
-              <h3 class="feature-list__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="feature-list__text">
-                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+                If you have fewer than 500 bookings per month, we have the perfect solution for you.
+                Instead of worrying about anything else, you can fully concentrate on serving your
+                clients and making sales.
               </p>
+              <div class="read-more">
+                <p class="feature-list__text">
+                  We will take care of the rest. With our booking engine, you can set your prices
+                  while we handle all the administrative tasks. We ensure a seamless reservation
+                  experience for your customers and, once the booking is complete, we compile the
+                  necessary data and calculate your earnings. Every month, we will send you a
+                  commission check for all the bookings made. By entrusting us with the management,
+                  you will save valuable time and effort, allowing you to focus on what you do best.
+                  Our service simplifies your operations and provides a worry-free solution.
+                </p>
+              </div>
+              <label class="read-more-btn" for="checkTwo">Read More</label>
             </li>
           </ul>
         </div>
       </section>
 
-      <!--Чим ми займаємося-->
-      <section class="section work">
+      <!--Product-->
+      <section class="section work" id="product">
         <div class="container">
-          <h2 class="section__title">Чим ми займаємося</h2>
-          <ul class="work-list">
-            <li class="work-list__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/desktop/studio/img1-desktop.jpg    1x,
-                    ./images/desktop/studio/img1-desktop@2x.jpg 2x
-                  "
-                  media="(min-width:1200px)"
+          <h2 class="section__title">Products</h2>
+          <p class="work-sibtitle">
+            Here is a list of products offered by TSS Travelsoft and Services:
+          </p>
+          <!-- ----- -->
+          <div class="owl-carousel owl-theme">
+            <div class="work-list__item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+                class="work-list-icon"
+              >
+                <path
+                  d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"
                 />
-                <img
-                  src="./images/desktop/studio/img1-desktop.jpg"
-                  alt="Людина набирає текст на компьютері"
-                  width="370"
-                  height="294"
+                <path
+                  d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"
                 />
-              </picture>
-
-              <p class="work-list__text">Десктопні додатки</p>
-            </li>
-            <li class="work-list__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/desktop/studio/img2-desktop.jpg    1x,
-                    ./images/desktop/studio/img2-desktop@2x.jpg 2x
-                  "
-                  media="(min-width:1200px)"
+              </svg>
+              <p class="work-list__subtitle">B2B Travel Booking Portal:</p>
+              <p class="work-list__text">
+                A platform designed for travel agents, agencies and Travel Advisors to access and
+                book various travel services such as flights, hotels, car rentals, and tours for
+                their clients.
+              </p>
+            </div>
+            <div class="work-list__item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                fill="currentColor"
+                class="work-list-icon"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M9.482 9.341c-.069.062-.17.153-.17.309 0 .162.107.325.3.456.877.613 2.521.54 2.592.538h.002c.667 0 1.32-.18 1.894-.519A3.838 3.838 0 0 0 16 6.819c.018-1.316-.44-2.218-.666-2.664l-.04-.08C13.963 1.487 11.106 0 8 0A8 8 0 0 0 .473 5.29C1.488 4.048 3.183 3.262 5 3.262c2.83 0 5.01 1.885 5.01 4.797h-.004v.002c0 .338-.168.832-.487 1.244l.006-.006a.594.594 0 0 1-.043.041Z"
                 />
-                <img
-                  src="./images/desktop/studio/img2-desktop.jpg"
-                  alt="Людина переглядає макети мобільного додатка на компьютері"
-                  width="370"
-                  height="294"
+                <path
+                  d="M.01 7.753a8.137 8.137 0 0 0 .753 3.641 8 8 0 0 0 6.495 4.564 5.21 5.21 0 0 1-.785-.377h-.01l-.12-.075a5.45 5.45 0 0 1-1.56-1.463A5.543 5.543 0 0 1 6.81 5.8l.01-.004.025-.012c.208-.098.62-.292 1.167-.285.129.001.257.012.384.033a4.037 4.037 0 0 0-.993-.698l-.01-.005C6.348 4.282 5.199 4.263 5 4.263c-2.44 0-4.824 1.634-4.99 3.49Zm10.263 7.912c.088-.027.177-.054.265-.084-.102.032-.204.06-.307.086l.042-.002Z"
                 />
-              </picture>
-
-              <p class="work-list__text">Мобільні додатки</p>
-            </li>
-            <li class="work-list__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/desktop/studio/img3-desktop.jpg    1x,
-                    ./images/desktop/studio/img3-desktop@2x.jpg 2x
-                  "
-                  media="(min-width:1200px)"
+                <path
+                  d="M10.228 15.667a5.21 5.21 0 0 0 .303-.086l.082-.025a8.019 8.019 0 0 0 4.162-3.3.25.25 0 0 0-.331-.35c-.215.112-.436.21-.663.294a6.367 6.367 0 0 1-2.243.4c-2.957 0-5.532-2.031-5.532-4.644.002-.135.017-.268.046-.399a4.543 4.543 0 0 0-.46 5.898l.003.005c.315.441.707.821 1.158 1.121h.003l.144.09c.877.55 1.721 1.078 3.328.996Z"
                 />
-                <img
-                  src="./images/desktop/studio/img3-desktop.jpg"
-                  alt="Людина переглядає палітри кольорів на планшеті"
-                  width="370"
-                  height="294"
+              </svg>
+              <p class="work-list__subtitle">Travel Agency Software:</p>
+              <p class="work-list__text">
+                Comprehensive software solutions tailored for travel agencies, enabling them to
+                manage bookings, track customer information, generate invoices, and streamline their
+                operations.
+              </p>
+            </div>
+            <div class="work-list__item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                fill="currentColor"
+                class="work-list-icon"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5H0V4zm11.5 1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-2zM0 11v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1H0z"
                 />
-              </picture>
-
-              <p class="work-list__text">Дизайнерські рішення</p>
-            </li>
-          </ul>
+              </svg>
+              <p class="work-list__subtitle">Payment Platform:</p>
+              <p class="work-list__text">
+                A secure and efficient payment system that facilitates online transactions for
+                travel bookings. This platform enables customers to make payments using various
+                methods, such as credit cards, e-wallets, or bank transfers. You may connect your
+                own payment provider contract or subscribe to our services.
+              </p>
+            </div>
+            <div class="work-list__item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                fill="currentColor"
+                class="work-list-icon"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M14 10a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h12zM2 9a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1a2 2 0 0 0-2-2H2z"
+                />
+                <path
+                  d="M5 11.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-2 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM14 3a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12zM2 2a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z"
+                />
+                <path
+                  d="M5 4.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-2 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"
+                />
+              </svg>
+              <p class="work-list__subtitle">Payment Providers Services:</p>
+              <p class="work-list__text">
+                TSS Travelsoft and Services partner with various payment service providers to offer
+                a wide range of payment options to their clients. This includes integrating payment
+                gateways, establishing merchant accounts, and ensuring smooth payment processing.
+              </p>
+            </div>
+            <div class="work-list__item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="46"
+                height="46"
+                fill="currentColor"
+                class="work-list-icon"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M13 6.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5zm0 3a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5zm-.5 2.5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5z"
+                />
+                <path
+                  d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12zM2 1a1 1 0 0 0-1 1v1h14V2a1 1 0 0 0-1-1H2zM1 4v10a1 1 0 0 0 1 1h2V4H1zm4 0v11h9a1 1 0 0 0 1-1V4H5z"
+                />
+              </svg>
+              <p class="work-list__subtitle">B2C Travel Booking Portal:</p>
+              <p class="work-list__text">
+                A user-friendly website or application that allows individual travelers to search,
+                compare, and book travel services directly, including flights, accommodations, and
+                activities.
+              </p>
+            </div>
+            <div class="work-list__item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="work-list-icon" viewBox="0 0 16 16">
+                <path d="M4.54.146A.5.5 0 0 1 4.893 0h6.214a.5.5 0 0 1 .353.146l4.394 4.394a.5.5 0 0 1 .146.353v6.214a.5.5 0 0 1-.146.353l-4.394 4.394a.5.5 0 0 1-.353.146H4.893a.5.5 0 0 1-.353-.146L.146 11.46A.5.5 0 0 1 0 11.107V4.893a.5.5 0 0 1 .146-.353L4.54.146zM5.1 1 1 5.1v5.8L5.1 15h5.8l4.1-4.1V5.1L10.9 1H5.1z"/>
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+              <p class="work-list__subtitle">Customer Cancellation Protecting Services:</p>
+              <p class="work-list__text">
+                A service we provide through a third party that provides protection to customers in
+                case they need to cancel or modify their travel plans. This may include offering
+                refunds, re-booking options, airline bankruptcy or missed connection coverage.
+              </p>
+            </div>
+            <div class="work-list__item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="work-list-icon" viewBox="0 0 16 16">
+                <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h12A1.5 1.5 0 0 1 16 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-12A1.5 1.5 0 0 1 1 14.5V14H.5a.5.5 0 0 1 0-1H1V9H.5a.5.5 0 0 1 0-1H1V4H.5a.5.5 0 0 1 0-1H1v-.5zM2.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h12a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5h-12z"/>
+                <path d="M5.035 8h1.528c.047-.184.12-.357.214-.516l-1.08-1.08A3.482 3.482 0 0 0 5.035 8zm1.369-2.303 1.08 1.08c.16-.094.332-.167.516-.214V5.035a3.482 3.482 0 0 0-1.596.662zM9 5.035v1.528c.184.047.357.12.516.214l1.08-1.08A3.482 3.482 0 0 0 9 5.035zm2.303 1.369-1.08 1.08c.094.16.167.332.214.516h1.528a3.483 3.483 0 0 0-.662-1.596zM11.965 9h-1.528c-.047.184-.12.357-.214.516l1.08 1.08A3.483 3.483 0 0 0 11.965 9zm-1.369 2.303-1.08-1.08c-.16.094-.332.167-.516.214v1.528a3.483 3.483 0 0 0 1.596-.662zM8 11.965v-1.528a1.989 1.989 0 0 1-.516-.214l-1.08 1.08A3.483 3.483 0 0 0 8 11.965zm-2.303-1.369 1.08-1.08A1.988 1.988 0 0 1 6.563 9H5.035c.085.593.319 1.138.662 1.596zM4 8.5a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0zm4.5-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+              </svg>
+              <p class="work-list__subtitle">Fraud Protection Platform:</p>
+              <p class="work-list__text">
+                A system designed to detect and prevent fraudulent activities related to online
+                travel bookings. It employs advanced algorithms and security measures to safeguard
+                customer information and prevent unauthorized transactions. This is also provided by
+                a third party we partnered to achieve affordable pricing for such seervices.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- Наша команда
-      <!-- <section class="section team"> -->
-      <section class="section team">
+      <!-- About Us -->
+      <section class="section about" id="about">
         <div class="container">
-          <h2 class="section__title">Наша команда</h2>
-          <ul class="team-list">
-            <li class="team-list__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/desktop/studio/ihordemianenko-desktop.jpg    1x,
-                    ./images/desktop/studio/ihordemianenko-desktop@2x.jpg 2x
-                  "
-                  media="(min-width:1200px)"
-                />
-                <source
-                  srcset="
-                    ./images/tablet/studio/ihordemianenko-tablet.jpg    1x,
-                    ./images/tablet/studio/ihordemianenko-tablet@2x.jpg 2x
-                  "
-                  media="(min-width:768px)"
-                />
-                <source
-                  srcset="
-                    ./images/mob/studio/ihordemianenko-mob.jpg    1x,
-                    ./images/mob/studio/ihordemianenko-mob@2x.jpg 2x
-                  "
-                  media="(min-width:320px)"
-                />
-                <img
-                  src="./images/mob/studio/ihordemianenko-mob.jpg"
-                  alt="Фото Ігор Дем'яненко"
-                  width="450"
-                  height="460"
-                />
-              </picture>
-
-              <div class="team-list__name">
-                <h3 class="team-list__title">Ігор Дем'яненко</h3>
-                <p class="team-list__text">Product Designer</p>
-
-                <ul class="network">
-                  <li class="network__list">
-                    <a
-                      href="https://instagram.com"
-                      class="network__link"
-                      target="_blank"
-                      rel="noopener noreferer nofollow"
-                    >
-                      <div class="network__button">
-                        <svg class="network__icon" width="20px" height="20px">
-                          <use href="./images/icons.svg#instagram"></use>
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="network__list">
-                    <a
-                      href="https://twitter.com"
-                      class="network__link"
-                      target="_blank"
-                      rel="noopener noreferer nofollow"
-                    >
-                      <div class="network__button">
-                        <svg class="network__icon" width="20px" height="20px">
-                          <use href="./images/icons.svg#twitter"></use>
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="network__list">
-                    <a
-                      href="https://facebook.com"
-                      class="network__link"
-                      target="_blank"
-                      rel="noopener noreferer nofollow"
-                    >
-                      <div class="network__button">
-                        <svg class="network__icon" width="20px" height="20px">
-                          <use href="./images/icons.svg#facebook"></use>
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="network__list">
-                    <a
-                      href="https://linkedin.com"
-                      class="network__link"
-                      target="_blank"
-                      rel="noopener noreferer nofollow"
-                    >
-                      <div class="network__button">
-                        <svg class="network__icon" width="20px" height="20px">
-                          <use href="./images/icons.svg#linkedin"></use>
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
+          <h2 class="section__title">About Us</h2>
+          <div class="row">
+            <div
+              class="col-12 d-flex flex-column flex-md-row justify-content-center align-items-center"
+            >
+              <div class="col col-lg-8">
+                <p class="about-text text-start text-md-center m-auto">
+                  <strong>TSS Travelsoft and Services</strong> is a leading provider of cutting-edge
+                  solutions tailored specifically for OTA's and Tour Operators. With over 20 years
+                  of experience, we have developed and refined our booking engine to meet the unique
+                  needs of the travel industry. Our commitment to excellence led us to expand our
+                  services and offer our state-of-the-art Travel Booking integration to the wider
+                  Travel Trade community.
+                </p>
               </div>
-            </li>
-
-            <li class="team-list__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/desktop/studio/olhariepina-desktop.jpg    1x,
-                    ./images/desktop/studio/olhariepina-desktop@2x.jpg 2x
-                  "
-                  media="(min-width:1200px)"
-                />
-                <source
-                  srcset="
-                    ./images/tablet/studio/olhariepina-tablet.jpg    1x,
-                    ./images/tablet/studio/olhariepina-tablet@2x.jpg 2x
-                  "
-                  media="(min-width:768px)"
-                />
-                <source
-                  srcset="
-                    ./images/mob/studio/olhariepina-mob.jpg    1x,
-                    ./images/mob/studio/olhariepina-mob@2x.jpg 2x
-                  "
-                  media="(min-width:320px)"
-                />
+              <div class="col col-lg-4 d-none d-md-block">
                 <img
-                  src="./images/mob/studio/olhariepina-mob.jpg"
-                  alt="Фото Ольга Рєпіна"
-                  width="450"
-                  height="460"
+                  class="about-img"
+                  src="./images/istockphoto-1448909110-612x612.jpg"
+                  alt="laptop"
                 />
-              </picture>
-
-              <div class="team-list__name">
-                <h3 class="team-list__title">Ольга Рєпіна</h3>
-                <p class="team-list__text">Frontend Developer</p>
-                <ul class="network">
-                  <li class="network__list">
-                    <a
-                      href="https://instagram.com"
-                      class="network__link"
-                      target="_blank"
-                      rel="noopener noreferer nofollow"
-                    >
-                      <div class="network__button">
-                        <svg class="network__icon" width="20px" height="20px">
-                          <use href="./images/icons.svg#instagram"></use>
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="network__list">
-                    <a
-                      href="https://twitter.com"
-                      class="network__link"
-                      target="_blank"
-                      rel="noopener noreferer nofollow"
-                    >
-                      <div class="network__button">
-                        <svg class="network__icon" width="20px" height="20px">
-                          <use href="./images/icons.svg#twitter"></use>
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="network__list">
-                    <a
-                      href="https://facebook.com"
-                      class="network__link"
-                      target="_blank"
-                      rel="noopener noreferer nofollow"
-                    >
-                      <div class="network__button">
-                        <svg class="network__icon" width="20px" height="20px">
-                          <use href="./images/icons.svg#facebook"></use>
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="network__list">
-                    <a
-                      href="https://linkedin.com"
-                      class="network__link"
-                      target="_blank"
-                      rel="noopener noreferer nofollow"
-                    >
-                      <div class="network__button">
-                        <svg class="network__icon" width="20px" height="20px">
-                          <use href="./images/icons.svg#linkedin"></use>
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
               </div>
-            </li>
-
-            <li class="team-list__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/desktop/studio/mykolatarasov-desktop.jpg    1x,
-                    ./images/desktop/studio/mykolatarasov-desktop@2x.jpg 2x
-                  "
-                  media="(min-width:1200px)"
-                />
-                <source
-                  srcset="
-                    ./images/tablet/studio/mykolatarasov-tablet.jpg    1x,
-                    ./images/tablet/studio/mykolatarasov-tablet@2x.jpg 2x
-                  "
-                  media="(min-width:768px)"
-                />
-                <source
-                  srcset="
-                    ./images/mob/studio/mykolatarasov-mob.jpg    1x,
-                    ./images/mob/studio/mykolatarasov-mob@2x.jpg 2x
-                  "
-                  media="(min-width:320px)"
-                />
+            </div>
+            <div
+              class="col-12 d-flex flex-column flex-md-row justify-items-center align-items-center"
+            >
+              <div class="col col-lg-4 d-none d-md-block">
                 <img
-                  src="./images/mob/studio/mykolatarasov-mob.jpg"
-                  alt="Фото Микола Тарасов"
-                  width="450"
-                  height="460"
+                  class="about-img"
+                  src="./images/istockphoto-1397959151-612x612.webp"
+                  alt="plane"
                 />
-              </picture>
-
-              <div class="team-list__name">
-                <h3 class="team-list__title">Микола Тарасов</h3>
-                <p class="team-list__text">Marketing</p>
-                <ul class="network">
-                  <li class="network__list">
-                    <a
-                      href="https://instagram.com"
-                      class="network__link"
-                      target="_blank"
-                      rel="noopener noreferer nofollow"
-                    >
-                      <div class="network__button">
-                        <svg class="network__icon" width="20px" height="20px">
-                          <use href="./images/icons.svg#instagram"></use>
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="network__list">
-                    <a
-                      href="https://twitter.com"
-                      class="network__link"
-                      target="_blank"
-                      rel="noopener noreferer nofollow"
-                    >
-                      <div class="network__button">
-                        <svg class="network__icon" width="20px" height="20px">
-                          <use href="./images/icons.svg#twitter"></use>
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="network__list">
-                    <a
-                      href="https://facebook.com"
-                      class="network__link"
-                      target="_blank"
-                      rel="noopener noreferer nofollow"
-                    >
-                      <div class="network__button">
-                        <svg class="network__icon" width="20px" height="20px">
-                          <use href="./images/icons.svg#facebook"></use>
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="network__list">
-                    <a
-                      href="https://linkedin.com"
-                      class="network__link"
-                      target="_blank"
-                      rel="noopener noreferer nofollow"
-                    >
-                      <div class="network__button">
-                        <svg class="network__icon" width="20px" height="20px">
-                          <use href="./images/icons.svg#linkedin"></use>
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
               </div>
-            </li>
-
-            <li class="team-list__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/desktop/studio/mykhailoyermakov-desktop.jpg    1x,
-                    ./images/desktop/studio/mykhailoyermakov-desktop@2x.jpg 2x
-                  "
-                  media="(min-width:1200px)"
-                />
-                <source
-                  srcset="
-                    ./images/tablet/studio/mykhailoyermakov-tablet.jpg    1x,
-                    ./images/tablet/studio/mykhailoyermakov-tablet@2x.jpg 2x
-                  "
-                  media="(min-width:768px)"
-                />
-                <source
-                  srcset="
-                    ./images/mob/studio/mykhailoyermakov-mob.jpg    1x,
-                    ./images/mob/studio/mykhailoyermakov-mob@2x.jpg 2x
-                  "
-                  media="(min-width:320px)"
-                />
-                <img
-                  src="./images/mob/studio/mykhailoyermakov-mob.jpg"
-                  alt="Фото Михайло Єрмаков"
-                  width="450"
-                  height="460"
-                />
-              </picture>
-
-              <div class="team-list__name">
-                <h3 class="team-list__title">Михайло Єрмаков</h3>
-                <p class="team-list__text">UI Designer</p>
-                <ul class="network">
-                  <li class="network__list">
-                    <a
-                      href="https://instagram.com"
-                      class="network__link"
-                      target="_blank"
-                      rel="noopener noreferer nofollow"
-                    >
-                      <div class="network__button">
-                        <svg class="network__icon" width="20px" height="20px">
-                          <use href="./images/icons.svg#instagram"></use>
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="network__list">
-                    <a
-                      href="https://twitter.com"
-                      class="network__link"
-                      target="_blank"
-                      rel="noopener noreferer nofollow"
-                    >
-                      <div class="network__button">
-                        <svg class="network__icon" width="20px" height="20px">
-                          <use href="./images/icons.svg#twitter"></use>
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="network__list">
-                    <a
-                      href="https://facebook.com"
-                      class="network__link"
-                      target="_blank"
-                      rel="noopener noreferer nofollow"
-                    >
-                      <div class="network__button">
-                        <svg class="network__icon" width="20px" height="20px">
-                          <use href="./images/icons.svg#facebook"></use>
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="network__list">
-                    <a
-                      href="https://linkedin.com"
-                      class="network__link"
-                      target="_blank"
-                      rel="noopener noreferer nofollow"
-                    >
-                      <div class="network__button">
-                        <svg class="network__icon" width="20px" height="20px">
-                          <use href="./images/icons.svg#linkedin"></use>
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
+              <div class="col col-lg-8">
+                <p class="about-text text-start text-md-center m-auto">
+                  We understand the challenges and requirements of travel agents because we started
+                  as travel agents ourselves. This firsthand experience sets us apart as we
+                  intimately understand your needs and preferences. At
+                  <strong>TSS Travelsoft and Services</strong>, we take pride in being both travel
+                  agents and developers. This dual perspective enables us to create solutions that
+                  address your specific pain points. Our dedicated team of developers is constantly
+                  staying ahead of the curve, utilizing the latest technology and implementing
+                  regular updates to ensure that our services remain cutting-edge.
+                </p>
               </div>
-            </li>
-          </ul>
+            </div>
+            <div
+              class="col-12 d-flex flex-column flex-md-row justify-content-center align-items-center"
+            >
+              <div class="col col-lg-8">
+                <p class="about-text text-start text-md-center m-auto">
+                  When you choose <strong>TSS Travelsoft and Services</strong>, you can count on our
+                  unwavering commitment to customer satisfaction. We strive to deliver exceptional
+                  experiences, seamless integration, and continuous support to our valued clients.
+                  By subscribing to our services, you gain access to the most up-to-date technology
+                  and ongoing improvements, empowering your business to thrive in the ever-evolving
+                  travel industry. Experience the difference with TSS Travelsoft and Services, where
+                  your success is our top priority.
+                </p>
+              </div>
+              <div class="col col-lg-4 d-none d-md-block">
+                <img class="about-img" src="./images/istockphoto-537331500-612x612.jpg" alt="computer" />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <!--Постійні клієнти-->
-      <section class="section clients">
+      <!--Contacts-->
+      <section class="section clients" id="contact">
         <div class="container">
-          <h2 class="section__title">Постійні клієнти</h2>
-          <ul class="clients-list">
+          <h2 class="section__title">Contacts</h2>
+          <p class="contact-subtitle">
+            Feel free to communicate your preferences, updates, or optimization suggestions. We
+            value your input!
+          </p>
+          <h3 style="text-align: center; font-weight: 600; margin-top: 15px; font-size: 18px">
+            Get in touch
+          </h3>
+          <form class="contact-form" autocomplete="on">
+            <label for="name">
+              Name
+              <input type="text" name="name" placeholder="Enter your name" />
+            </label>
+            <label for="email">
+              Email
+              <input type="email" name="email" placeholder="Enter your email" />
+            </label>
+            <label for="message">
+              Message
+              <textarea
+                name="message"
+                cols="10"
+                rows="6"
+                placeholder="Enter your message here..."
+              ></textarea>
+            </label>
+            <button type="submit">Submit</button>
+          </form>
+          <!-- <ul class="clients-list">
             <li>
               <a href="/index.html" class="clients-list__button">
                 <svg class="clients-list__image-svg" width="106px" height="60px">
@@ -705,21 +578,22 @@
                 </svg>
               </a>
             </li>
-          </ul>
+          </ul> -->
         </div>
       </section>
     </main>
 
-    <!-- Футер -->
-    <footer class="page-footer" id="contacts">
-      <div class="container">
-        <div class="page-footer__contacts">
-          <a href="./index.html" class="logo-secondary"
-            ><span class="logo-accent">Web</span>Studio</a
-          >
-          <address>
-            <ul class="page-footer__link">
-              <li class="page-footer__address-link">
+    <!-- Footer -->
+    <footer>
+      <div class="page-footer" id="contacts">
+        <div class="container">
+          <div class="page-footer__contacts">
+            <a href="./index.html">
+              <img src="./images/tsstravelsoft.png" class="logo" alt="logo" />
+            </a>
+            <address>
+              <ul class="page-footer__link">
+                <!-- <li class="page-footer__address-link">
                 <a
                   href="https://www.google.com/search?tbs=lf:1,lf_ui:1&tbm=lcl&sxsrf=ALiCzsYic9nBEuaywwjqmKYpoHVzt39aoQ:1659000467713&q=%D0%BC.+%D0%9A%D0%B8%D1%97%D0%B2,+%D0%BF%D1%80-%D1%82+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26&rflfq=1&num=10&ved=2ahUKEwivqL2sopv5AhWI_CoKHQGGCf0QtgN6BAgEEAQ"
                   class="page-footer__address"
@@ -727,83 +601,183 @@
                   rel="noreferrer noopener nofollow"
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
-              </li>
-              <li class="link">
-                <a href="maito:info@devstudio.com" class="link">info@devstudio.com</a>
-              </li>
-              <li class="link">
-                <a href="tel:+380961111111" class="link">+38096 111 11 11</a>
-              </li>
-            </ul>
-          </address>
-        </div>
-
-        <div class="page-footer__network">
-          <h2 class="page-footer__title">приєднуйтесь</h2>
-          <div>
-            <ul class="network network--dark">
-              <li class="network__list network--dark">
-                <a
-                  href="https://instagram.com"
-                  class="network__link network--dark"
-                  target="_blank"
-                  rel="noopener noreferer nofollow"
-                >
-                  <div class="network__button network--dark">
-                    <svg class="network__icon network--dark" width="20px" height="20px">
-                      <use href="./images/icons.svg#instagram"></use>
-                    </svg>
-                  </div>
-                </a>
-              </li>
-              <li class="network__list network--dark">
-                <a
-                  href="https://twitter.com"
-                  class="network__link network--dark"
-                  target="_blank"
-                  rel="noopener noreferer nofollow"
-                >
-                  <div class="network__button network--dark">
-                    <svg class="network__icon network--dark" width="20px" height="20px">
-                      <use href="./images/icons.svg#twitter"></use>
-                    </svg>
-                  </div>
-                </a>
-              </li>
-              <li class="network__list network--dark">
-                <a
-                  href="https://facebook.com"
-                  class="network__link network--dark"
-                  target="_blank"
-                  rel="noopener noreferer nofollow"
-                >
-                  <div class="network__button network--dark">
-                    <svg class="network__icon network--dark" width="20px" height="20px">
-                      <use href="./images/icons.svg#facebook"></use>
-                    </svg>
-                  </div>
-                </a>
-              </li>
-              <li class="network__list network--dark">
-                <a
-                  href="https://linkedin.com"
-                  class="network__link network--dark"
-                  target="_blank"
-                  rel="noopener noreferer nofollow"
-                >
-                  <div class="network__button network--dark">
-                    <svg class="network__icon network--dark" width="20px" height="20px">
-                      <use href="./images/icons.svg#linkedin"></use>
-                    </svg>
-                  </div>
-                </a>
-              </li>
-            </ul>
+              </li> -->
+                <li class="link">
+                  <a href="maito:info@tsstravelsoft.eu" class="link">info@tsstravelsoft.eu</a>
+                </li>
+                <li class="link">
+                  <a href="tel:+128 96 111111" class="link">+128 33 111111</a>
+                </li>
+              </ul>
+            </address>
           </div>
-        </div>
 
-        <div class="page-footer__subscription">
-          <h2 class="page-footer__title">Підпишіться на розсилку</h2>
+          <div class="page-footer__nav">
+            <nav>
+              <ul class="site-nav list">
+                <li class="site-nav__item"><a href="#service" class="link">Service</a></li>
+                <li class="site-nav__item"><a href="#product" class="link">Product</a></li>
+                <li class="site-nav__item"><a href="#contact" class="link">Contact</a></li>
+                <li class="site-nav__item"><a href="#about" class="link">About Us</a></li>
+                <li class="site-nav__item">
+                  <a
+                    type="button"
+                    class="link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    >Terms & Conditions</a
+                  >
+                </li>
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Terms & Conditions</h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body p-4">
+                        <p>
+                          Please note that the following Terms and Conditions govern the use of TSS
+                          Travelsoft & Services AB's travel software. By accessing or using our
+                          software, you agree to be bound by these Terms and Conditions. If you do
+                          not agree with any part of these terms, please refrain from using our
+                          software. <br> <strong>Definitions</strong><br> a. "Software" refers to the travel software
+                          developed by TSS Travelsoft & Services AB. b. "User" refers to any
+                          individual or entity accessing or using the Software. <br> <strong>License</strong> <br> a. TSS
+                          Travelsoft & Services AB grants the User a non-exclusive,
+                          non-transferable, and revocable license to use the Software for the
+                          purposes outlined in these Terms and Conditions. b. The license is limited
+                          to the User's internal use and does not include the right to sublicense or
+                          redistribute the Software. <br> <strong>Intellectual Property Rights</strong> <br> a. TSS Travelsoft
+                          & Services AB retains all intellectual property rights, including but not
+                          limited to copyrights, patents, trademarks, trade secrets, and other
+                          proprietary rights, related to the Software. b. The User acknowledges that
+                          they do not acquire any ownership rights to the Software. <br> <strong>Restrictions</strong> <br> a.
+                          The User shall not modify, adapt, translate, reverse engineer, decompile,
+                          disassemble, or create derivative works based on the Software. b. The User
+                          shall not remove, alter, or obscure any copyright, trademark, or other
+                          proprietary notices on the Software. <br> <strong>Support and Maintenance</strong> <br> a. TSS
+                          Travelsoft & Services AB may provide support and maintenance services for
+                          the Software. The terms and conditions of such services shall be agreed
+                          upon separately. <br> <strong>Privacy</strong> <br> a. TSS Travelsoft & Services AB respects the
+                          privacy of its Users. The collection, storage, and use of personal data by
+                          TSS Travelsoft & Services AB are governed by our Privacy Policy, which can
+                          be found on our website. <br> <strong>Warranty and Disclaimer</strong> <br> a. TSS Travelsoft &
+                          Services AB provides the Software "as is" without any warranties or
+                          guarantees of any kind, whether express or implied. b. TSS Travelsoft &
+                          Services AB does not warrant that the Software will be error-free,
+                          uninterrupted, or free from viruses or other harmful components. c. The
+                          User acknowledges that the use of the Software is at their own risk.
+                          <br> <strong>Limitation of Liability</strong> <br> a. TSS Travelsoft & Services AB shall not be
+                          liable for any direct, indirect, incidental, consequential, or exemplary
+                          damages arising out of or in connection with the use or inability to use
+                          the Software. b. TSS Travelsoft & Services AB's total liability, whether
+                          in contract, tort, or otherwise, shall not exceed the amount paid by the
+                          User, if any, for the use of the Software. <br> <strong>Termination</strong> <br> a. TSS Travelsoft &
+                          Services AB may terminate the User's license to use the Software at any
+                          time without prior notice if the User breaches these Terms and Conditions.
+                          b. Upon termination, the User shall cease all use of the Software and
+                          delete any copies in their possession. <br> <strong>Governing Law and Jurisdiction</strong> <br> a.
+                          These Terms and Conditions shall be governed by and construed in
+                          accordance with the laws of the Kingdom of Sweden. b. Any disputes arising
+                          out of or in connection with these Terms and Conditions shall be subject
+                          to the exclusive jurisdiction of the courts in Stockholm, Sweden. <br>
+                          <strong>Amendments</strong> <br> a. TSS Travelsoft & Services AB reserves the right to modify or
+                          amend these Terms and Conditions at any time. b. Any modifications or
+                          amendments will be effective upon posting the updated version on our
+                          website or providing notice to the User. <br> Updated: 2023-05-22
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="page-footer__network">
+            <h2 class="page-footer__title">Social links</h2>
+            <div>
+              <ul class="network network--dark">
+                <li class="network__list network--dark">
+                  <a
+                    href="https://instagram.com"
+                    class="network__link network--dark"
+                    target="_blank"
+                    rel="noopener noreferer nofollow"
+                  >
+                    <div class="network__button network--dark">
+                      <svg class="network__icon network--dark" width="20px" height="20px">
+                        <use href="./images/icons.svg#instagram"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class="network__list network--dark">
+                  <a
+                    href="https://twitter.com"
+                    class="network__link network--dark"
+                    target="_blank"
+                    rel="noopener noreferer nofollow"
+                  >
+                    <div class="network__button network--dark">
+                      <svg class="network__icon network--dark" width="20px" height="20px">
+                        <use href="./images/icons.svg#twitter"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class="network__list network--dark">
+                  <a
+                    href="https://facebook.com"
+                    class="network__link network--dark"
+                    target="_blank"
+                    rel="noopener noreferer nofollow"
+                  >
+                    <div class="network__button network--dark">
+                      <svg class="network__icon network--dark" width="20px" height="20px">
+                        <use href="./images/icons.svg#facebook"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class="network__list network--dark">
+                  <a
+                    href="https://linkedin.com"
+                    class="network__link network--dark"
+                    target="_blank"
+                    rel="noopener noreferer nofollow"
+                  >
+                    <div class="network__button network--dark">
+                      <svg class="network__icon network--dark" width="20px" height="20px">
+                        <use href="./images/icons.svg#linkedin"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- <div class="page-footer__subscription">
+          <h2 class="page-footer__title">Subscribe for newsletters</h2>
           <form autocomplete="off" class="page-footer__footer-form">
             <label for="subscribe">
               <input
@@ -821,67 +795,18 @@
               </svg>
             </button>
           </form>
+        </div> -->
         </div>
+        <div class="footer-bottom">
+          <p class="footer-bottom__text">&#169;TSS Travelsoft & Service AB. All right reserved.</p>
       </div>
     </footer>
 
-    <!--Модальне вікно-->
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <div class="modal__form">
-          <button type="button" class="modal__close-button" data-modal-close>
-            <svg class="modal-icon" width="18px" height="18px">
-              <use href="./images/icons.svg#close-btn"></use>
-            </svg>
-          </button>
-          <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
-          <form autocomplete="off">
-            <label for="name">Ім'я</label>
-            <div class="modal__field">
-              <input type="text" name="username" id="name" class="modal__field-input" />
-              <svg width="18px" height="18px" class="modal__icon">
-                <use href="./images/icons.svg#person"></use>
-              </svg>
-            </div>
-            <label for="tel">Телефон</label>
-            <div class="modal__field">
-              <input type="tel" name="telephone" id="tel" class="modal__field-input" />
-              <svg width="18px" height="18px" class="modal__icon">
-                <use href="./images/icons.svg#phone"></use>
-              </svg>
-            </div>
-            <label for="email">Пошта</label>
-            <div class="modal__field">
-              <input type="email" name="email" id="email" class="modal__field-input" />
-              <svg width="18px" height="18px" class="modal__icon">
-                <use href="./images/icons.svg#email"></use>
-              </svg>
-            </div>
-            <label for="comment"
-              >Коментар
-              <textarea
-                name="comment"
-                id="comment"
-                placeholder="Введіть текст"
-                class="modal__field-input comment"
-              ></textarea>
-            </label>
-
-            <div class="modal__checkbox">
-              <input type="checkbox" name="subscription" id="check" class="modal__checkbox-list" />
-              <label class="modal__checkbox-text" for="check"
-                ><span class="modal__icon-check"></span>
-                <span>Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></span>
-              </label>
-            </div>
-
-            <button type="submit" class="modal__button">Відправити</button>
-          </form>
-        </div>
-      </div>
-    </div>
-    <!--Скрипт JS-->
-    <script src="./js/mobile-menu.js"></script>
-    <script src="./js/modal.js"></script>
+    <!-- Bootstrap -->
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- owl carousel -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
